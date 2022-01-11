@@ -14,7 +14,7 @@ export default {
 @import "../../assets/style/partials/variables.scss";
 
 .button {
-    padding: 15px;
+    padding: 15px 25px;
     color: $text-light;
     background-color: $background-dark-blue;
     border: none;
