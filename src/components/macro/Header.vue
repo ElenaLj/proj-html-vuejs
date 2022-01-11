@@ -6,7 +6,7 @@
                   <img src="../../assets/images/logo-2.png" alt="Sofbox Logo" class="header__logo">
               </div>
               <div class="col-8">
-                  <Navbar/>
+                  <Navbar :links="links"/>
               </div>
           </div>
       </div>
@@ -26,11 +26,32 @@ export default {
         return {
             links: 
             [
-                "Home",
-                "About Us",
-                "Feature",
-                "Testimonials",
-                "Contact US"
+                {
+                    text: "Home",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "About us",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Feature",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Testimonials",
+                    url: "#",
+                    current: false
+                },
+                {
+                    text: "Contact US",
+                    url: "#",
+                    current: false
+                },
+
             ]
         }
     }
