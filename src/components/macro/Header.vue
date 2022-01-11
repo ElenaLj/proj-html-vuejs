@@ -1,11 +1,11 @@
 <template>
   <header class="header">
-      <div class="container">
+      <div class="container mt-3">
           <div class="row">
-              <div class="col-4">
+              <div class="offset-1 col-2">
                   <img src="../../assets/images/logo-2.png" alt="Sofbox Logo" class="header__logo">
               </div>
-              <div class="col-8">
+              <div class="col-9">
                   <Navbar :links="links"/>
               </div>
           </div>
