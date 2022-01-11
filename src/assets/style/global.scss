@@ -4,7 +4,7 @@
     vendor
 --------------- */
 @import 'bootstrap';
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;700&display=swap');
 
 /* --------------
     containers
@@ -23,4 +23,23 @@
 --------------- */
 body {
     font-family: $font-primary;
+}
+
+h5 {
+    margin-bottom: 25px;
+}
+
+.footer__links {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+    padding: 10px 0;
+
+        a {
+            color: $text-grey;
+            font-weight: 500;
+            text-decoration: none;
+        }
+    }
 }
