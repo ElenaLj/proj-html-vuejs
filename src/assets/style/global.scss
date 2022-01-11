@@ -3,6 +3,8 @@
 /* --------------
     vendor
 --------------- */
+@import 'bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;700&display=swap');
 
 /* --------------
     typography
@@ -11,3 +13,6 @@
 /* --------------
     mix
 --------------- */
+body {
+    font-family: $font-primary;
+}
