@@ -5,6 +5,7 @@
     <TechSupport/>
     <FeaturesSection/>
     <Testimonials/>
+    <LatestPosts/>
   </main>
 </template>
 
@@ -14,6 +15,7 @@ import OnlineMarketing from "../sections/OnlineMarketing.vue";
 import TechSupport from "../sections/TechSupport.vue";
 import FeaturesSection from "../sections/FeaturesSection.vue";
 import Testimonials from "../sections/Testimonials.vue";
+import LatestPosts from "../sections/LatestPosts.vue";
 
 export default {
     name: "Main",
@@ -22,11 +24,11 @@ export default {
       OnlineMarketing,
       TechSupport,
       FeaturesSection,
-      Testimonials
+      Testimonials,
+      LatestPosts
     }
 }
 </script>
 
 <style lang="scss" scoped>
-
 </style>
