@@ -4,7 +4,7 @@
           <div class="row">
               <div class="offset-3 col-6">
                   <h2 class="testimonials__title">Our Testimonials</h2>
-                  <p class="testimonials__text">If you are planning on developing a product landind app or website, take a look at this beautiful-crafted</p>
+                  <p class="testimonials__text">If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
               </div>
           </div>
           <div class="testimonials__card">

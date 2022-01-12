@@ -6,6 +6,7 @@
     <FeaturesSection/>
     <Testimonials/>
     <LatestPosts/>
+    <Contacts/>
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import TechSupport from "../sections/TechSupport.vue";
 import FeaturesSection from "../sections/FeaturesSection.vue";
 import Testimonials from "../sections/Testimonials.vue";
 import LatestPosts from "../sections/LatestPosts.vue";
+import Contacts from "../sections/Contacts.vue";
 
 export default {
     name: "Main",
@@ -25,7 +27,8 @@ export default {
       TechSupport,
       FeaturesSection,
       Testimonials,
-      LatestPosts
+      LatestPosts,
+      Contacts
     }
 }
 </script>
