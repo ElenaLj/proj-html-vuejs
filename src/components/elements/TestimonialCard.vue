@@ -1,14 +1,17 @@
 <template>
   <div class="t-card">
-    <img src="../../assets/images/26.jpeg" alt="Man" class="t-card__img">
-    <h5 class="t-card__title">Julia Aan <span class="t-card__subtitle">- COO Sofbox</span></h5>
-    <p class="t-card__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, tenetur, placeat minima aut nostrum maxime</p>
+    <img :src="testimonial.img" :alt="testimonial.alt" class="t-card__img">
+    <h5 class="t-card__title">{{testimonial.name}} <span class="t-card__subtitle">- {{testimonial.role}}</span></h5>
+    <p class="t-card__text">{{testimonial.text}}</p>
   </div>
 </template>
 
 <script>
 export default {
-    name: "TestimonialCard"
+    name: "TestimonialCard",
+    props: {
+      testimonial: Object
+    }
 }
 </script>
 
@@ -21,13 +24,19 @@ export default {
     padding: 40px 20px;
     color: $text-primary;
     border: 1px solid $border-grayscale-two;
-
+    background-color: $background-secondary;
+    
     &__img {
         width: 80px;
         margin-bottom: 25px;
-        border: 1px solid $border-light;
         border: 1px solid $border-lightblue;
         border-radius: 50%;
+    }
+
+    &__subtitle {
+      color: $text-grey;
+      font-size: 16px;
+      font-weight: 500;
     }
 }
 </style>

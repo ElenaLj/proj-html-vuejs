@@ -8,8 +8,12 @@
               </div>
           </div>
           <div class="testimonials__card">
-                  <TestimonialCard/>
-                  <TestimonialCard/>
+                  <TestimonialCard v-for="(testimonial, index) in testimonials" :key="index" :testimonial="testimonial"/>
+          </div>
+
+          <div class="testimonials__icons">
+              <i class="fas fa-stop active"></i>
+              <i class="fas fa-stop"></i>
           </div>
       </div>
   </section>
@@ -22,6 +26,27 @@ export default {
     name: "Testimonials",
     components: {
         TestimonialCard
+    },
+    data() {
+        return {
+            testimonials: 
+            [
+                {
+                    img: require("../../assets/images/26.jpeg"),
+                    alt: "Woman picture",
+                    name: "Julia AAnn",
+                    role: "COO Sofbox",
+                    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip."
+                },
+                {
+                    img: require("../../assets/images/27.jpeg"),
+                    alt: "Man picture",
+                    name: "Mac Znder",
+                    role: "Manager Sofbox",
+                    text: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium vero eos et consectetur accus adip adip."
+                }
+            ]
+        }
     }
 }
 </script>
@@ -33,6 +58,16 @@ export default {
 
     &__card {
         display: flex;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+
+        > * {
+            margin: 0 3px;
+            width: 10px;
+        }  
     }
 }
 </style>

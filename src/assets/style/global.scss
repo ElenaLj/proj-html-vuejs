@@ -22,18 +22,16 @@
 /* --------------
     typography
 --------------- */
-body {
-    line-height: 2;
+h5 {
+    margin-bottom: 25px;
 }
+
 /* --------------
     mix
 --------------- */
 body {
     font-family: $font-primary;
-}
-
-h5 {
-    margin-bottom: 25px;
+    line-height: 2;
 }
 
 .footer__links {
