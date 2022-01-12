@@ -4,6 +4,7 @@
     <OnlineMarketing/>
     <TechSupport/>
     <FeaturesSection/>
+    <Testimonials/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import Jumbo from "../sections/Jumbo.vue";
 import OnlineMarketing from "../sections/OnlineMarketing.vue";
 import TechSupport from "../sections/TechSupport.vue";
 import FeaturesSection from "../sections/FeaturesSection.vue";
+import Testimonials from "../sections/Testimonials.vue";
 
 export default {
     name: "Main",
@@ -19,7 +21,8 @@ export default {
       Jumbo,
       OnlineMarketing,
       TechSupport,
-      FeaturesSection
+      FeaturesSection,
+      Testimonials
     }
 }
 </script>
