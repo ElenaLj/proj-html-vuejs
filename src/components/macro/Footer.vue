@@ -1,29 +1,28 @@
 <template>
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
 
-        <div class="col-3">
-          <!-- <img src="../../assets/images/35.png" alt="Sofbox Logo" class="footer__logo"> -->
-          <LogoandLogoText/>
-          <p class="footer__text">It is a long established fact that a reader will be distracted by the readable content</p>
-          <p class="footer__text">Copyright <em>@</em> 2018 <span class="footer__blue">Sofbox</span></p>
-        </div>
+          <div class="col-3">
+            <LogoandLogoText/>
+            <p class="footer__text">It is a long established fact that a reader will be distracted by the readable content</p>
+            <p class="footer__text">Copyright <em>@</em> 2018 <span class="footer__blue">Sofbox</span></p>
+          </div>
 
-        <div class="offset-1 col-2">
-          <FooterLinks :items="items"/>
-        </div>
+          <div class="offset-1 col-2">
+            <FooterLinks :items="items"/>
+          </div>
 
-        <div class="col-3">
-          <FooterElms :elm="elm"/>
-        </div>
+          <div class="col-3">
+            <FooterElms :elm="elm"/>
+          </div>
 
-        <div class="col-3">
-          <FooterActions :actions="actions"/>
+          <div class="col-3">
+            <FooterActions :actions="actions"/>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 </template>
 
 <script>

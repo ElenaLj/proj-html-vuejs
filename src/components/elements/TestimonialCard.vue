@@ -1,9 +1,9 @@
 <template>
-  <div class="t-card">
-    <img :src="testimonial.img" :alt="testimonial.alt" class="t-card__img">
-    <h5 class="t-card__title">{{testimonial.name}} <span class="t-card__subtitle">- {{testimonial.role}}</span></h5>
-    <p class="t-card__text">{{testimonial.text}}</p>
-  </div>
+    <div class="t-card">
+      <img :src="testimonial.img" :alt="testimonial.alt" class="t-card__img">
+      <h5 class="t-card__title">{{testimonial.name}} <span class="t-card__subtitle">- {{testimonial.role}}</span></h5>
+      <p class="t-card__text">{{testimonial.text}}</p>
+    </div>
 </template>
 
 <script>

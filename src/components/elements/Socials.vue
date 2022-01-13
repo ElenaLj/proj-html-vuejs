@@ -1,10 +1,10 @@
 <template>
-  <div class="socials">
-    <i class="fab fa-facebook-f socials__icon"></i>
-    <i class="fab fa-twitter socials__icon"></i>
-    <i class="fab fa-github socials__icon"></i>
-    <i class="fab fa-instagram socials__icon"></i>
-  </div>
+    <div class="socials">
+      <i class="fab fa-facebook-f socials__icon"></i>
+      <i class="fab fa-twitter socials__icon"></i>
+      <i class="fab fa-github socials__icon"></i>
+      <i class="fab fa-instagram socials__icon"></i>
+    </div>
 </template>
 
 <script>

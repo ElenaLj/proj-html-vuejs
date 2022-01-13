@@ -1,17 +1,16 @@
 <template>
-  <header class="header">
-      <div class="container mt-3">
-          <div class="row align-items-center">
-              <div class="offset-1 col-2">
-                  <img src="../../assets/images/logo-2.png" alt="Sofbox Logo" class="header__logo">
-              </div>
-              <div class="col-9">
-                  <Navbar :links="links"/>
-              </div>
-          </div>
-      </div>
-
-  </header>
+    <header class="header">
+        <div class="container mt-3">
+            <div class="row align-items-center">
+                <div class="offset-1 col-2">
+                    <img src="../../assets/images/logo-2.png" alt="Sofbox Logo" class="header__logo">
+                </div>
+                <div class="col-9">
+                    <Navbar :links="links"/>
+                </div>
+            </div>
+        </div>
+    </header>
 </template>
 
 <script>

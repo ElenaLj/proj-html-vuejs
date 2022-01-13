@@ -1,12 +1,12 @@
 <template>
-  <section class="contacts">
-      <div class="container">
-          <div class="row">
-              <div class="offset-3 col-6">
-                  <h2 class="contacts__title">Contact with our team</h2>
-                  <p class="contacts__text">If you are planning on developing a product landing.</p>
-              </div>
-          </div>
+    <section class="contacts">
+        <div class="container">
+            <div class="row">
+                <div class="offset-3 col-6">
+                    <h2 class="contacts__title">Contact with our team</h2>
+                    <p class="contacts__text">If you are planning on developing a product landing.</p>
+                </div>
+            </div>
 
             <div class="row gx-5">
                 <div class="col-6">

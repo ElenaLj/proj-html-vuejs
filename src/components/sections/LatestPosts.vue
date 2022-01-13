@@ -1,17 +1,17 @@
 <template>
-  <section class="latest">
-    <div class="container">
-        <div class="row">
-            <div class="offset-3 col-6">
-                <h2 class="latest__title">Latest Posts</h2>
-                  <p class="latest__text">If you are planning on developing a product landing.</p>
-              </div>
-          </div>
-          <div class="latest__card">
-              <Posts v-for="(post, index) in posts" :key="index" :post="post"/>
-          </div>
-      </div>
-  </section>
+    <section class="latest">
+        <div class="container">
+            <div class="row">
+                <div class="offset-3 col-6">
+                    <h2 class="latest__title">Latest Posts</h2>
+                    <p class="latest__text">If you are planning on developing a product landing.</p>
+                </div>
+            </div>
+            <div class="latest__card">
+                <Posts v-for="(post, index) in posts" :key="index" :post="post"/>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>

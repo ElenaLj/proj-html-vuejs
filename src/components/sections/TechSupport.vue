@@ -1,18 +1,18 @@
 <template>
-  <section class="support">
-      <div class="container">
-          <div class="row">
-              <div class="col-6 support__info">
-                  <h2 class="support__title">Get tips tricks on how to skyrocket your sales.</h2>
-                  <p class="support__text">Faff about only quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny!</p>
-                  <Label v-for="(label, index) in labels" :key="index" :label="label"/>
-              </div>
-              <div class="col-6">
-                  <img src="../../assets/images/509.jpeg" alt="Graphic art of people working">
-              </div>
-          </div>
-      </div>
-  </section>
+    <section class="support">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 support__info">
+                    <h2 class="support__title">Get tips tricks on how to skyrocket your sales.</h2>
+                    <p class="support__text">Faff about only quid blower I don't want no agro bleeding chimney pot burke tosser cras nice one boot fanny!</p>
+                    <Label v-for="(label, index) in labels" :key="index" :label="label"/>
+                </div>
+                <div class="col-6">
+                    <img src="../../assets/images/509.jpeg" alt="Graphic art of people working">
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>

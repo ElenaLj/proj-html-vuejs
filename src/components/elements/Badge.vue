@@ -1,8 +1,8 @@
 <template>
-  <div class="badge">
-    <h6 class="badge__title">{{badge.title}}</h6>
-    <img :src="badge.src" :alt="badge.alt" class="badge__img">
-  </div>
+    <div class="badge">
+        <h6 class="badge__title">{{badge.title}}</h6>
+        <img :src="badge.src" :alt="badge.alt" class="badge__img">
+    </div>
 </template>
 
 <script>
@@ -40,6 +40,7 @@ export default {
     cursor: pointer;
     background-color: $text-green;
     color: $text-light;
+    
     img {
         background-color: $text-green;
     }

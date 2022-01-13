@@ -1,20 +1,20 @@
 <template>
-  <section class="features">
-      <div class="container">
-          <div class="row features__info">
-              <div class="col-8">
-                  <h2 class="features__title">Popular features that your business needs</h2>
-                  <p class="features__text">Faff about only quid blower I don't want no agro bleeding chimney <br> pot burke tosser cras nice one boot fanny!</p>
-              </div>
-              <div class="col-3">
-                  <Button>Explore More Feature</Button>
-              </div>
-          </div>
-          <div class="features__badges">
-              <Badge v-for="(badge, index) in badges" :key="index" :badge="badge"/>
-          </div>
-      </div>
-  </section>
+    <section class="features">
+        <div class="container">
+            <div class="row features__info">
+                <div class="col-8">
+                    <h2 class="features__title">Popular features that your business needs</h2>
+                    <p class="features__text">Faff about only quid blower I don't want no agro bleeding chimney <br> pot burke tosser cras nice one boot fanny!</p>
+                </div>
+                <div class="col-3">
+                    <Button>Explore More Feature</Button>
+                </div>
+            </div>
+            <div class="features__badges">
+                <Badge v-for="(badge, index) in badges" :key="index" :badge="badge"/>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>

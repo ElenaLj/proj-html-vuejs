@@ -1,21 +1,21 @@
 <template>
-  <nav class="nav-bar">
-      <ul class="nav-bar__list">
-          <li class="nav-bar__item" v-for="(link, index) in links" :key="index">
-              <a :href="link.url">{{link.text}}</a>
-          </li>
-      </ul>
+    <nav class="nav-bar">
+        <ul class="nav-bar__list">
+            <li class="nav-bar__item" v-for="(link, index) in links" :key="index">
+                <a :href="link.url">{{link.text}}</a>
+            </li>
+        </ul>
 
-      <div class="nav-bar__actions">
-          <i class="fas fa-search"></i>
-          <i class="fas fa-shopping-cart" id="cart"></i>
-          <Button>Get Started</Button>
+        <div class="nav-bar__actions">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-cart" id="cart"></i>
+            <Button>Get Started</Button>
 
         <!-- shopping cart circle -->
         <div class="nav-bar__circle">0</div>
         <!-- /shopping cart circle -->
-      </div>
-  </nav>
+        </div>
+    </nav>
 </template>
 
 <script>

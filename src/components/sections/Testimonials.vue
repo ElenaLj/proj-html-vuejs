@@ -1,22 +1,22 @@
 <template>
-  <section class="testimonials">
-      <div class="container">
-          <div class="row">
-              <div class="offset-3 col-6">
-                  <h2 class="testimonials__title">Our Testimonials</h2>
-                  <p class="testimonials__text">If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
-              </div>
-          </div>
-          <div class="testimonials__card">
-                  <TestimonialCard v-for="(testimonial, index) in testimonials" :key="index" :testimonial="testimonial"/>
-          </div>
+    <section class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="offset-3 col-6">
+                    <h2 class="testimonials__title">Our Testimonials</h2>
+                    <p class="testimonials__text">If you are planning on developing a product landing app or website, take a look at this beautiful-crafted</p>
+                </div>
+            </div>
+            <div class="testimonials__card">
+                <TestimonialCard v-for="(testimonial, index) in testimonials" :key="index" :testimonial="testimonial"/>
+            </div>
 
-          <div class="testimonials__icons">
-              <i class="fas fa-stop active"></i>
-              <i class="fas fa-stop"></i>
-          </div>
-      </div>
-  </section>
+            <div class="testimonials__icons">
+                <i class="fas fa-stop active"></i>
+                <i class="fas fa-stop"></i>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>

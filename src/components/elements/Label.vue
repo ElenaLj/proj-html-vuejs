@@ -1,11 +1,11 @@
 <template>
-  <div class="label">
-      <img :src="label.img" alt="Analysis sketch" class="label__img">
-      <div class="label__info">
-          <h4 class="label__title">{{label.title}}</h4>
-            <p class="label__text">{{label.text}}</p>
-      </div>
-  </div>
+    <div class="label">
+        <img :src="label.img" alt="Analysis sketch" class="label__img">
+        <div class="label__info">
+            <h4 class="label__title">{{label.title}}</h4>
+                <p class="label__text">{{label.text}}</p>
+        </div>
+    </div>
 </template>
 
 <script>
