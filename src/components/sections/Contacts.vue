@@ -8,7 +8,7 @@
               </div>
           </div>
 
-            <div class="row">
+            <div class="row gx-5">
                 <div class="col-6">
                     <img src="../../assets/images/StaticMapService.GetMapIma.png" alt="San Francisco Map">
                 </div>
@@ -19,9 +19,12 @@
                     <p class="contacts__phone">0 1223 456 789</p>
                     <p class="contacts__mail">mail@sofbox.com</p>
                     
-                    <div class="contacts__icons"></div>
+                    <!-- Social Network icons -->
+                    <Socials/> 
+                    <!-- / Social Network icons -->
 
                     <!-- Contact form -->
+                    <h4>Get in Touch</h4>
                     <form>
                         <div class="row d-flex g-2">
                             <div class="col-6">
@@ -42,9 +45,12 @@
                         <div class="row">
                             <div class="col-12">
                                 <label for="message"></label>
-                                <input type="text" class="form-control" id="message" placeholder="Your Message">
+                                <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Your Message"></textarea>
                             </div>
                         </div>
+
+                        <Button>Send Message</Button>
+
                     </form>
                     <!-- / Contact form -->
                 </div>
@@ -55,21 +61,49 @@
 
 <script>
 import LogoandLogoText from "../elements/LogoandLogoText.vue";
+import Socials from "../elements/Socials.vue";
+import Button from "../elements/Button.vue";
 
 export default {
     name: "Contacts",
     components: {
-        LogoandLogoText
+        LogoandLogoText,
+        Socials,
+        Button
     }
 }
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partials/variables.scss";
+
 .contacts {
     text-align: center;
+    margin-bottom: 100px;
+
+    &__text {
+        margin-bottom: 80px;
+    }
 
     &__info {
         text-align: left;
     } 
+
+    &__address {
+        font-weight: 500;
+    }
+
+    &__phone, 
+    &__mail {
+        margin: 0;
+        color: $text-grey;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    textarea {
+        padding: 15px;
+        margin-bottom: 35px;
+    }
 }
 </style>
