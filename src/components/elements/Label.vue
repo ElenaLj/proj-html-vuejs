@@ -23,7 +23,6 @@ export default {
 .label {
     height: 200px;
     padding: 20px 10px;
-    border: 1px solid $border-grayscale-one;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,6 +33,20 @@ export default {
 
     &__info {
         padding: 20px;
+    }
+}
+
+.label:hover {
+    cursor: pointer;
+}
+
+.label:active {
+    transform: scale(105%, 105%);
+    border: 1px solid $border-grayscale-one;
+    box-shadow: 18px 33px 49px -2px $border-grayscale-three;
+
+    h4 {
+        color: $text-blue;
     }
 }
 </style>

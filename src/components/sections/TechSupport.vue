@@ -8,7 +8,7 @@
                   <Label v-for="(label, index) in labels" :key="index" :label="label"/>
               </div>
               <div class="col-6">
-                  <img src="../../assets/images/509.jpeg" alt="People sketch">
+                  <img src="../../assets/images/509.jpeg" alt="Graphic art of people working">
               </div>
           </div>
       </div>
