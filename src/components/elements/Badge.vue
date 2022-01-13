@@ -1,7 +1,7 @@
 <template>
   <div class="badge">
     <h6 class="badge__title">{{badge.title}}</h6>
-    <img :src="badge.src" alt="Graph sketch" class="badge__img">
+    <img :src="badge.src" :alt="badge.alt" class="badge__img">
   </div>
 </template>
 
@@ -25,6 +25,7 @@ export default {
     color: $text-dark;
     border: 1px solid $border-grayscale-two;
     text-align: left;
+    box-shadow: 5px 5px 30px 10px $border-grayscale-two;
 
     &__title {
         font-size: 18px;
@@ -32,6 +33,15 @@ export default {
 
     &__img {
         height: 70px;
+    }
+}
+
+.badge:hover {
+    cursor: pointer;
+    background-color: $text-green;
+    color: $text-light;
+    img {
+        background-color: $text-green;
     }
 }
 </style>

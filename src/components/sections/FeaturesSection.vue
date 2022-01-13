@@ -32,35 +32,43 @@ export default {
             badges: [
                 {
                     title: "Customized Invoices",
-                    src: require("../../assets/images/001.png") 
+                    src: require("../../assets/images/001.png"),
+                    alt: "Graphic art sketch"
                 },
                 {
                     title: "Stock Management",
-                    src: require("../../assets/images/002.png") 
+                    src: require("../../assets/images/002.png"),
+                    alt: "Graphic art sketch"
                 },
                 {
                     title: "Receivable & Payables",
-                    src: require("../../assets/images/003.png") 
+                    src: require("../../assets/images/003.png"),
+                    alt: "Graphic art sketch"
                 },
                 {
                     title: "Manage Buying",
-                    src: require("../../assets/images/004.png") 
+                    src: require("../../assets/images/004.png"),
+                    alt: "Graphic art sketch" 
                 },
                 {
                     title: "Powerful & Secure",
-                    src: require("../../assets/images/005.png") 
+                    src: require("../../assets/images/005.png"),
+                    alt: "Graphic art sketch"
                 },
                 {
                     title: "Fastest Return Filing",
-                    src: require("../../assets/images/006.png") 
+                    src: require("../../assets/images/006.png"),
+                    alt: "Graphic art sketch" 
                 },
                 {
                     title: "Monthly Detailed",
-                    src: require("../../assets/images/007.png") 
+                    src: require("../../assets/images/007.png"),
+                    alt: "Graphic art sketch"
                 },
                 {
                     title: "Product Management",
-                    src: require("../../assets/images/008.png") 
+                    src: require("../../assets/images/008.png"),
+                    alt: "Graphic art sketch"
                 }
             ]
         }
