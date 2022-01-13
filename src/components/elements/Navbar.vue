@@ -4,24 +4,16 @@
           <li class="nav-bar__item" v-for="(link, index) in links" :key="index">
               <a :href="link.url">{{link.text}}</a>
           </li>
-          <!-- <li class="nav-bar__item">
-              <a href="#">About Us</a>
-          </li>
-          <li class="nav-bar__item">
-              <a href="#">Feature</a>
-          </li>
-          <li class="nav-bar__item">
-              <a href="#">Testimonials</a>
-          </li>
-          <li class="nav-bar__item">
-              <a href="#">Contact US</a>
-          </li> -->
       </ul>
 
-      <div class="actions">
-          <i class="fas fa-search actions__icon"></i>
-          <i class="fas fa-shopping-cart actions__icon"></i>
+      <div class="nav-bar__actions">
+          <i class="fas fa-search"></i>
+          <i class="fas fa-shopping-cart" id="cart"></i>
           <Button>Get Started</Button>
+
+        <!-- shopping cart circle -->
+        <div class="nav-bar__circle">0</div>
+        <!-- /shopping cart circle -->
       </div>
   </nav>
 </template>
@@ -40,6 +32,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partials/variables.scss";
+
 .nav-bar {
     display: flex;
 
@@ -57,14 +51,45 @@ export default {
         
         a {
             color: inherit;
+            font-weight: 500;
             text-decoration: none;
+            line-height: 60px;
         }
     }
 
-    .actions {
+    &__item:hover {
+        cursor: pointer;
+        color: $text-blue;
+        border-bottom: 2px solid $text-blue;
+    }
+
+    &__actions {
+        position: relative;
+
         > * {
-            margin-right: 25px;
+            margin-right: 35px;
         }
+    }
+
+    &__actions:hover {
+        cursor: pointer;
+    }
+
+    &__circle {
+        height: 25px;
+        width: 25px;
+        padding: 5px;
+        text-align: center;
+        line-height: 1.4;
+        color: $text-light;
+        font-size: 13px;
+        font-weight: 500;
+        background-color: $background-dark-blue;
+        border-radius: 50%;
+        position: absolute;
+        left: 20%;
+        top: 10px;
+        z-index: -999;
     }
 }
 </style>
