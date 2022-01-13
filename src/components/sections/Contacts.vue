@@ -90,6 +90,8 @@ export default {
     } 
 
     &__address {
+        color: $text-primary;
+        font-size: 20px;
         font-weight: 500;
     }
 

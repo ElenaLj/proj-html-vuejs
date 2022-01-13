@@ -17,6 +17,7 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../assets/style/partials/variables.scss";
+
 .t-card {
     width: calc(100% / 2 - 40px);
     height: 350px;
@@ -25,6 +26,7 @@ export default {
     color: $text-primary;
     border: 1px solid $border-grayscale-two;
     background-color: $background-secondary;
+    box-shadow: 10px 10px 30px 10px $border-grayscale-two;
     
     &__img {
         width: 80px;

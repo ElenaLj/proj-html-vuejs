@@ -28,5 +28,11 @@ export default {
         height: 50px;
         border: 1px solid $border-grayscale-two;
     }
+
+    &__icon:hover {
+      cursor: pointer;
+      color: $text-light;
+      background-color: $background-dark;
+    }
 }
 </style>

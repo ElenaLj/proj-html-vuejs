@@ -40,7 +40,7 @@ export default {
     cursor: pointer;
 }
 
-.label:active {
+.label:hover {
     transform: scale(105%, 105%);
     border: 1px solid $border-grayscale-one;
     box-shadow: 18px 33px 49px -2px $border-grayscale-three;

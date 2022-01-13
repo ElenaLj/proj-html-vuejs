@@ -20,4 +20,8 @@ export default {
     border: none;
     border-radius: 5px;
 }
+
+.button:hover {
+  background-color: $background-dark;
+}
 </style>

@@ -34,4 +34,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+main {
+    background-image: url(../../assets/images/14.png);
+    background-repeat: no-repeat;
+    background-position: -50% 40%;
+}
 </style>

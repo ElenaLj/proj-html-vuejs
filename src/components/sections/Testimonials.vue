@@ -52,12 +52,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "../../assets/style/partials/variables.scss";
+
 .testimonials {
-    margin: 100px 0;
+    margin: 150px 0;
     text-align: center;
+    background-image: url(../../assets/images/15.png), linear-gradient(0deg, rgba(255,255,255,1) 33%, rgba(239,247,255,1) 64%);
+    background-repeat: no-repeat;
+    background-position: right -25% bottom 110%;
 
     &__card {
         display: flex;
+        margin-top: 50px;
     }
 
     &__icons {
@@ -68,6 +74,10 @@ export default {
             margin: 0 3px;
             width: 10px;
         }  
+
+        & .active {
+            color: $text-blue;
+        }
     }
 }
 </style>
