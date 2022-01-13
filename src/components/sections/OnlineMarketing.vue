@@ -1,20 +1,8 @@
 <template>
-  <section class="marketing">
-      <div class="container">
-          <div class="row">
-            <div class="col-4">
-                <Card :cards="cards"/>
-            </div>
-
-            <div class="col-4">
-                <Card :cards="cards"/>
-            </div>
-
-            <div class="col-4">
-                <Card :cards="cards"/>
-            </div>
-          </div>
-      </div>
+    <section class="marketing">
+        <div class="container">
+            <Card v-for="(card, index) in cards" :key="index" :card="card"/>
+        </div>
   </section>
 </template>
 
@@ -29,10 +17,36 @@ export default {
     data() {
         return {
             cards: [
-                "SEO",
-                "SEM",
-                "Website Strategy",
-                "Social management"
+                {
+                    title: "Online Marketing",
+                    subtitle: "It is a long established fact that a reader will be distracted",
+                    infos: [
+                        "SEO",
+                        "SEM",
+                        "Website Strategy",
+                        "Social management"
+                    ]
+                },
+                {
+                    title: "Online Marketing",
+                    subtitle: "It is a long established fact that a reader will be distracted",
+                    infos: [
+                        "SEO",
+                        "SEM",
+                        "Website Strategy",
+                        "Social management"
+                    ]
+                },
+                {
+                    title: "Online Marketing",
+                    subtitle: "It is a long established fact that a reader will be distracted",
+                    infos: [
+                        "SEO",
+                        "SEM",
+                        "Website Strategy",
+                        "Social management"
+                    ]
+                },
             ]
         }
     }
@@ -42,5 +56,9 @@ export default {
 <style lang="scss" scoped>
 .marketing {
     margin-top: 150px;
+
+    .container {
+        display: flex;
+    }
 }
 </style>

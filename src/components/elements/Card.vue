@@ -6,12 +6,12 @@
             </div>
 
             <div class="col-9">
-                <h5>Online Marketing</h5>
-                <p class="cards__text">It is a long established fact that a reader will be distracted</p>
+                <h5>{{card.title}}</h5>
+                <p class="cards__text">{{card.subtitle}}</p>
                 <ul class="cards__list">
-                    <li v-for="(card, index) in cards" :key="index" class="cards__item">
+                    <li v-for="(info, index) in card.infos" :key="index" class="cards__item">
                         <i class="fas fa-check cards__icon"></i>
-                        <span>{{card}}</span>
+                        <span>{{info}}</span>
                     </li>
                 </ul>
             </div>
@@ -23,7 +23,7 @@
 export default {
     name: "Card",
     props: {
-        cards: Array
+        card: Object
     }
 }
 </script>
@@ -32,6 +32,8 @@ export default {
 @import "../../assets/style/partials/variables.scss";
 
 .cards {
+    width: calc(100% / 3);
+    
     &__img {
         height: 80px;
     }
