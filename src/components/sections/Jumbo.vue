@@ -39,7 +39,9 @@ export default {
         align-items: flex-start;
         gap: 30px;
 
-
+        p {
+            color: $text-grey;
+        }
     }
 
     &__img {
